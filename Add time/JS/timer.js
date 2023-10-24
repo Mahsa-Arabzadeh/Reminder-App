@@ -7,27 +7,15 @@ function showTime() {
     i = i < 10 ? "0" + i : i;
     for (let j = 45; j >= 0; j -= 15) {
       j = j < 10 ? "0" + j : j;
+      let ampm = i >= 12 && i <= 23 ? "PM" : "AM";
       // create a template.
-      let option = `<option value="${i}">${i}:${j}</option>`;
+      let option = `<option value="${i}">${i}:${j} ${ampm}</option>`;
       timerBox.innerHTML += option;
     }
   }
 }
 
 showTime();
-
-// for (let j = 60; j >= 0; j -= 15) {
-//   j = j < 10 ? "0" + j : j;
-//   let option = `<option value="${j}">${j}</option>`;
-//   // timerBox[1].firstElementChild.insertAdjacentHTML("afterend", option);
-//   timerMinutes.innerHTML += option;
-// }
-
-// for (let i = 2; i > 0; i--) {
-//   let ampm = i == 1 ? "AM" : "PM";
-//   let option = `<option value="${ampm}">${ampm}</option>`;
-//   timerBox[2].firstElementChild.insertAdjacentHTML("afterend", option);
-// }
 
 // const config = {
 //   timeSet: {
