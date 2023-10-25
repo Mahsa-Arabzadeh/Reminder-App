@@ -1,3 +1,11 @@
+.wrapper .content {
+  width: 100%;
+  justify-content: space-between;
+}
 
+.disable {
+  opacity: 0.6;
+  pointer-events: none;
+}
 
 /*# sourceMappingURL=style.css.map */

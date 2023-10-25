@@ -1,8 +1,12 @@
 // select timer box.
 const timerBox = document.querySelector("#timer-box");
-const timerMinutes = document.querySelector("#timer-minutes");
 const currentTime = document.querySelector("#current-time");
 const setAlarmBtn = document.querySelector("#set-alarm-btn");
+const content = document.querySelector(".content");
+
+let alarmTime,
+  isAlarmSet = false,
+  ringtone = new Audio("");
 
 // function setAlarm() {
 //   let time = `${}`;
@@ -17,7 +21,7 @@ const setAlarmBtn = document.querySelector("#set-alarm-btn");
 // }
 
 // Events:
-setAlarmBtn.addEventListener("click", setAlarm);
+setAlarmBtn.addEventListener("click", getAlarm);
 
 function showTime() {
   for (let i = 23; i >= 0; i--) {
@@ -50,7 +54,6 @@ function setAlarm() {
   const currentFormattedTime =
     (currentTime.innerHTML = `${hours}:${minute}:${second} ${ampm}`);
   if (selectedTime === currentFormattedTime) {
-    console.log("mahsa");
   } else {
     alert(`الارم برای ${selectedTime} تنظیم شد!`);
   }
@@ -62,6 +65,36 @@ function setAlarm() {
   second = second < 10 ? "0" + second : second;
 }
 
+function getAlarm() {
+  if (isAlarmSet) {
+    alarmTime = "";
+    ringtone.pause();
+    content.classList.remove("disable");
+    setAlarmBtn.innerText = "Set Alarm";
+    return (isAlarmSet = false);
+  }
+
+  let time = `${timerBox.value}`;
+
+  if (time.includes("Select")) {
+    return alert("Please, select a valid time to set Alarm!");
+  }
+  isAlarmSet = true;
+  alarmTime = time;
+  content.classList.add("disable");
+  console.log(time);
+  setAlarmBtn.innerText = "Clear Alarm";
+}
+
+// setInterval(() => {
+//   setAlarm();
+
+//   if (alarmTime == `${hours}:${minute} ${ampm}`) {
+//     ringtone.play();
+//     ringtone.loop = true;
+//   }
+// }, 1000);
+// ---------------------------------------------------------
 // const config = {
 //   timeSet: {
 //     hours: 0,
