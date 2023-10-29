@@ -6,19 +6,7 @@ const content = document.querySelector(".content");
 
 let alarmTime,
   isAlarmSet = false,
-  ringtone = new Audio("");
-
-// function setAlarm() {
-//   let time = `${}`;
-//   console.log(time);
-// setAlarmBtn.addEventListener("click", () => {
-//   // Get the option element by its index (starting from 0)
-//   let optionElement = timerBox.options[timerBox.options.length - 1];
-
-//   // Print the value of the option element in the console
-//   console.log(optionElement.value);
-// });
-// }
+  ringtone = new Audio("bedside-clock-alarm-95792.mp3");
 
 // Events:
 setAlarmBtn.addEventListener("click", getAlarm);
@@ -54,6 +42,7 @@ function setAlarm() {
   const currentFormattedTime =
     (currentTime.innerHTML = `${hours}:${minute}:${second} ${ampm}`);
   if (selectedTime === currentFormattedTime) {
+    ringtone.play();
   } else {
     alert(`الارم برای ${selectedTime} تنظیم شد!`);
   }
@@ -64,6 +53,8 @@ function setAlarm() {
   minute = minute < 10 ? "0" + minute : minute;
   second = second < 10 ? "0" + second : second;
 }
+
+setAlarm();
 
 function getAlarm() {
   if (isAlarmSet) {
@@ -95,33 +86,3 @@ function getAlarm() {
 //   }
 // }, 1000);
 // ---------------------------------------------------------
-// const config = {
-//   timeSet: {
-//     hours: 0,
-//     minutes: 0,
-//     seconds: 0,
-//   },
-// };
-
-// function diffrence(time) {
-//   time = config.timeSet.minutes + time;
-//   return time;
-// }
-
-// function displayTimer() {
-//   //   create option for set timer.
-//   const optionBox = document.createElement("option");
-//   // append option to the timer box.
-//   timerBox.appendChild(optionBox);
-//   //   start timer:
-//   const startTime = 0;
-//   const endTime = 24;
-//   //   create a (for) loop for making option box.
-//   for (let i = startTime; i <= endTime; i += diffrence(20)) {
-//     timerBox.innerHTML += `<option> ${i} <option/>`;
-//   }
-// }
-
-// displayTimer();
-
-// function currentTime() {}
