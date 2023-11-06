@@ -10,10 +10,19 @@
   color: white;
   background-color: #1A1A1A;
 }
-@media (max-width: 576px) {
-  #header {
-    background-color: red;
-  }
+#header .profile-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#header .profile-container .profile-picture {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3a3a;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
