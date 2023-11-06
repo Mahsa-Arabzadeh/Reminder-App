@@ -12,22 +12,49 @@
 
 #header{
     @include styles($white,$greyColor);
+    @include queryIf(576){
+        border-radius: 0px 0px 15px 15px;
+    }
     padding: 16px;
     .profile-container{
         @include display(flex,flex-end,center);
         .profile-picture{
             @include Dimensions(50px,50px);
             @include display(flex,center,center);
-            background-color: $grey;
+            @include styles($iconColor,$grey);
             border-radius: 50%;
+            cursor: pointer;
         }
     }
     .welcome-name{
-        color: $lightGrey;
         @include fontSize(16px);
+        color: $lightGrey;
     }
     .date-today{
         @include fontSize(25px);
         font-weight: 600;
+        margin-bottom: 10px;
+    }
+}
+
+.search-box{
+    @include display(flex,center,center);
+    @include styles($iconColor,$grey);
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.4) 5px 5px, rgba(0, 0, 0, 0.3) 10px 10px, rgba(0, 0, 0, 0.2) 15px 15px, rgba(0, 0, 0, 0.1) 20px 20px, rgba(0, 0, 0, 0.05) 25px 25px;
+    .input-search-box{
+        @include Dimensions(100%,30px);
+        background: linear-gradient(to right, $lightPurple,$darkPurple);
+        border-radius: 6px;
+        padding: 7px 8px;
+        outline: none;
+        border: none;            
+    }
+    ::placeholder{
+        color: $lightGrey;
+    }
+    .bx-search{
+        @include fontSize(26px);
+        cursor: pointer;
     }
 }
