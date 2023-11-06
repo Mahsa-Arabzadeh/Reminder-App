@@ -3,6 +3,10 @@
     background-color: $bgcolor;
 }
 
+@mixin fontSize($font){
+    font-size: $font;
+}
+
 @mixin Dimensions($width,$height){
     width: $width;
     height: $height;

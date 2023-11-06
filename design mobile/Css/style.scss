@@ -12,6 +12,7 @@
 
 #header{
     @include styles($white,$greyColor);
+    padding: 16px;
     .profile-container{
         @include display(flex,flex-end,center);
         .profile-picture{
@@ -20,5 +21,13 @@
             background-color: $grey;
             border-radius: 50%;
         }
+    }
+    .welcome-name{
+        color: $lightGrey;
+        @include fontSize(16px);
+    }
+    .date-today{
+        @include fontSize(25px);
+        font-weight: 600;
     }
 }

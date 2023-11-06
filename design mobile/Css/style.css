@@ -10,6 +10,7 @@
 #header {
   color: white;
   background-color: #1A1A1A;
+  padding: 16px;
 }
 #header .profile-container {
   display: flex;
@@ -24,6 +25,14 @@
   align-items: center;
   background-color: #3a3a3a;
   border-radius: 50%;
+}
+#header .welcome-name {
+  color: #959595;
+  font-size: 16px;
+}
+#header .date-today {
+  font-size: 25px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=style.css.map */
