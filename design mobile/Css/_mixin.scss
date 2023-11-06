@@ -1,0 +1,4 @@
+@mixin styles($color,$bgcolor){
+    color: $color;
+    background: $bgcolor;
+}

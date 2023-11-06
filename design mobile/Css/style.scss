@@ -1,0 +1,7 @@
+@import url("_mixin.scss");
+@import url("_varibles.scss");
+
+
+#header{
+    @include styles()
+}
