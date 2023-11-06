@@ -1,4 +1,27 @@
 @mixin styles($color,$bgcolor){
     color: $color;
-    background: $bgcolor;
+    background-color: $bgcolor;
+}
+
+@mixin Dimensions($width,$height){
+    width: $width;
+    height: $height;
+}
+
+@mixin display($display,$justify-content,$align-items){
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin queryIf($width){
+    @if ($width == 576){
+        @media (max-width:576px) {
+            @content;
+        }
+    } @else if($width == 800){
+        @media (max-width:800px) {
+            @content;
+        }
+    }
 }

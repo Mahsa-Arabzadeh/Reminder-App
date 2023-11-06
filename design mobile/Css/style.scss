@@ -1,7 +1,17 @@
-@import url("_mixin.scss");
-@import url("_varibles.scss");
+@import "varibles";
+@import "mixin";
 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
 
 #header{
-    @include styles()
+    @include styles($white,$greyColor);
+    @include queryIf(576){
+        background-color: red;
+    }
 }
