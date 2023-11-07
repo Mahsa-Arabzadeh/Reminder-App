@@ -10,6 +10,10 @@
     font-family: poppins;
 }
 
+body{
+    @include styles($white,$primaryColor);
+}
+
 #header{
     @include styles($white,$greyColor);
     @include queryIf(576){
@@ -56,5 +60,39 @@
     .bx-search{
         @include fontSize(26px);
         cursor: pointer;
+    }
+}
+
+.schedules{
+    @include display(flex,flex-start,center);
+    padding: 16px;
+    
+    .schedule-item-add{
+    position: relative;
+    padding: 0px 15px;
+    $border: 1px;
+    background: #1a1a1a97;
+    background-clip: padding-box;
+    border: solid $border transparent; 
+    border-radius: 7px;
+  
+     &:before {
+        content: '';
+        position: absolute;
+        top: 0; right: 0; bottom: 0; left: 0;
+        z-index: -1;
+        margin: -$border;
+        border-radius: inherit;
+        background: linear-gradient(135deg,$iconColor,$lightPurple);
+        }
+    }
+    .icon-schedule{
+        @include Dimensions(10px,10px);
+        .bx-category{
+            @include fontSize(50px);
+            color: $lightGrey;
+            transform: translate(20px,-25px);
+            text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
+        }
     }
 }

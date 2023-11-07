@@ -7,6 +7,11 @@
   font-family: poppins;
 }
 
+body {
+  color: white;
+  background-color: #000000;
+}
+
 #header {
   color: white;
   background-color: #1A1A1A;
@@ -67,6 +72,43 @@
 .search-box .bx-search {
   font-size: 26px;
   cursor: pointer;
+}
+
+.schedules {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 16px;
+}
+.schedules .schedule-item-add {
+  position: relative;
+  padding: 0px 15px;
+  background: rgba(26, 26, 26, 0.5921568627);
+  background-clip: padding-box;
+  border: solid 1px transparent;
+  border-radius: 7px;
+}
+.schedules .schedule-item-add:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: linear-gradient(135deg, #c6aa9a, rgba(154, 66, 208, 0.4823529412));
+}
+.schedules .icon-schedule {
+  width: 10px;
+  height: 10px;
+}
+.schedules .icon-schedule .bx-category {
+  font-size: 50px;
+  color: #959595;
+  transform: translate(20px, -25px);
+  text-shadow: 0px 6px 10px rgba(0, 0, 0, 0.8);
 }
 
 /*# sourceMappingURL=style.css.map */
