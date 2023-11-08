@@ -186,8 +186,43 @@ body{
 }
 
 #footer{
-    @include display(flex,space-between,flex-start);
+    @include display(flex,center,flex-start);
     @include styles($white,$primaryColorblur);
-    padding: 0px 16px;
+    padding: 10px 16px;
     height: 100vh;
+    transition: .3s;
+    .home{
+        @include display(flex,center,center);
+        @include Dimensions(100%,34px);
+        @include fontSize(23px);
+        cursor: pointer;
+        color: $lightGrey;
+        transition: .3s;
+        &:hover{
+            color: $lightPurple;
+        }
+    }
+    .add-reminder-plus{
+        @include fontSize(50px);
+        @include display(flex,center,center);
+        @include Dimensions(100%,34px);
+        cursor: pointer;
+        color: $lightGrey;
+        transition: .3s;
+        &:hover{
+            color: $lightPurple;
+            text-shadow: 0px 8px 10px rgba(0, 0, 0, 0.8);
+        }
+    }
+    .user-profile{
+        @include display(flex,center,center);
+        @include Dimensions(100%,34px);
+        @include fontSize(23px);
+        color: $lightGrey;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            color: $lightPurple;
+        }
+    }
 }
