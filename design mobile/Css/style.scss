@@ -12,6 +12,8 @@
 
 body{
     @include styles($white,$primaryColor);
+    height: 100vh;
+    overflow: hidden;
 }
 
 #header{
@@ -127,14 +129,65 @@ body{
 .free-reminder{
     @include Dimensions(100%,250px);
     overflow: auto;
-    padding: 16px;
+    padding: 0px 16px 16px;
     .header-free-reminder{
         @include display(flex,space-between,center);
+        @include styles($white,$primaryColor);
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
         .see-all{
             color: $lightPurple;
+        }
+    }
+    .free-reminder-item{
+        @include Dimensions(100%,80px);
+        @include display(flex,space-between,center);
+        margin-top: 20px;
+    }
+    .clock-part{
+        @include Dimensions(100px,100%);
+        @include display(flex,center,center);
+    }
+    .task-part{
+        @include Dimensions(inherit,100%);
+        @include styles($white,$greyColor);
+        @include display(flex,space-between,center);
+        padding: 10px 12px;
+        border-radius: 7px;
+    }
+    .title-part{
+        font-weight: 500;
+    }
+    .text-part{
+        color: $lightGrey;
+        margin-top: 5px;
+        line-height: 22px;
+    }
+    .delete-part{
+        @include display(flex,center,center);
+        @include Dimensions(55px,55px);
+        @include fontSize(30px);
+        background-color: $lightPurple;
+        border-radius: 50%;
+        cursor: pointer;
+        color: $grey;
+        transition: .3s;
+        &:hover{
+            color: $dangerColor;
+            transform: scale(0.8);
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
     }
 }
 .free-reminder::-webkit-scrollbar{
     width: 0px;
+}
+
+#footer{
+    @include display(flex,space-between,flex-start);
+    @include styles($white,$primaryColorblur);
+    padding: 0px 16px;
+    height: 100vh;
 }

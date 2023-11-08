@@ -10,6 +10,8 @@
 body {
   color: white;
   background-color: #000000;
+  height: 100vh;
+  overflow: hidden;
 }
 
 #header {
@@ -149,19 +151,87 @@ body {
   width: 100%;
   height: 250px;
   overflow: auto;
-  padding: 16px;
+  padding: 0px 16px 16px;
 }
 .free-reminder .header-free-reminder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: white;
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .free-reminder .header-free-reminder .see-all {
   color: #9a42d0;
 }
+.free-reminder .free-reminder-item {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.free-reminder .clock-part {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.free-reminder .task-part {
+  width: inherit;
+  height: 100%;
+  color: white;
+  background-color: #1A1A1A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 7px;
+}
+.free-reminder .title-part {
+  font-weight: 500;
+}
+.free-reminder .text-part {
+  color: #959595;
+  margin-top: 5px;
+  line-height: 22px;
+}
+.free-reminder .delete-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  font-size: 30px;
+  background-color: #9a42d0;
+  border-radius: 50%;
+  cursor: pointer;
+  color: #3a3a3a;
+  transition: 0.3s;
+}
+.free-reminder .delete-part:hover {
+  color: rgba(148, 40, 40, 0.8);
+  transform: scale(0.8);
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
 
 .free-reminder::-webkit-scrollbar {
   width: 0px;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5333333333);
+  padding: 0px 16px;
+  height: 100vh;
 }
 
 /*# sourceMappingURL=style.css.map */
