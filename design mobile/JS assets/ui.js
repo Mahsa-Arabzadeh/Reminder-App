@@ -1,7 +1,10 @@
 const welcomeName = document.querySelector(".welcome-name");
 const header = document.querySelector("#header");
 const searchBox = document.querySelector(".search-box");
+const plusAddReminder = document.querySelector(".add-reminder-plus");
 
+// Events:
+plusAddReminder.addEventListener("click", modalPupUp);
 function showWelcomeMessage() {
   const userName = prompt("لطفاً نام خود را وارد کنید:");
   if (userName) {
@@ -39,3 +42,9 @@ function getFormattedDate() {
   return formattedDate;
 }
 getFormattedDate();
+
+// modal for add alarm.
+function modalPupUp() {
+  const modal = document.querySelector("");
+  modal.classList.toggle("active");
+}
