@@ -11,6 +11,38 @@
 </head>
 
 <body>
+    <!-- start add alarm modal -->
+    <div class="modal-pupup">
+        <div class="content">
+            <h3 class="title-alarm-topic">Alarm topic:</h3>
+            <input class="title-alarm-text" type="text" placeholder="Title of your alarm...">
+            <div class="date-and-time">
+                <div class="date-alarm-plus">
+                    <h3 class="date-alarm-topic">Set date:</h3>
+                    <div class="date-input">
+                        <div class="output-set-date"></div>
+                        <i class='bx bx-calendar'></i>
+                    </div>
+                </div>
+                <div class="time-alarm-plus">
+                    <h3 class="time-alarm-topic">Set time:</h3>
+                    <!-- select time input set here -->
+                    <select name="" id="timer-box">انتخاب کنید</select>
+                    <!-- select time input set here -->
+                </div>
+            </div>
+            <div class="description-alarm-plus">
+                <h3 class="description-alarm-topic">Description:</h3>
+                <textarea name="" class="description-text-area"
+                    placeholder="Type a description for your alarm..."></textarea>
+            </div>
+            <div class="cancel-add-btn">
+                <div class="cancel-btn">Cancel</div>
+                <div id="set-alarm-btn"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end add alarm modal -->
     <header id="header">
         <div class="profile-container">
             <div class="profile-picture">
@@ -68,6 +100,7 @@
         </div>
     </footer>
     <script src="JS assets/ui.js"></script>
+    <script src="JS assets/selectTime.js"></script>
 </body>
 
 </html>

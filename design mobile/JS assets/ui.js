@@ -45,6 +45,6 @@ getFormattedDate();
 
 // modal for add alarm.
 function modalPupUp() {
-  const modal = document.querySelector("");
+  const modal = document.querySelector(".modal-pupup");
   modal.classList.toggle("active");
 }

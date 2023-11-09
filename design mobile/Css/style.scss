@@ -228,13 +228,27 @@ body{
 }
 
 .modal-pupup{
+    @include Dimensions(100%,100vh);
     @include display(flex,center,center);
+    background-color: #1a1a1ac2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     height: 100vh;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1000;
+    transition: .4s;
     .content{
         @include Dimensions(500px,473px);
         @include styles($white,$grey);
         padding: 30px 16px;
         border-radius: 7px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
     }
     .title-alarm-text{
         @include Dimensions(100%,44px);
@@ -304,4 +318,9 @@ body{
             background-color: #9a42d099;
         }
     }
+}
+
+.modal-pupup.active{
+    visibility: visible;
+    opacity: 1;
 }

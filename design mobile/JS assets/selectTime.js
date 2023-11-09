@@ -42,17 +42,16 @@ function getCurrentTime() {
   return { hours, minute, second, ampm };
 }
 
-setInterval(() => {
-  const { hours, minute, second, ampm } = getCurrentTime();
-  currentTime.innerHTML = `${hours} : ${minute} : ${second} ${ampm}`;
-  attachClickEventToItems(function (clickedDate) {
-    if (boxValue == `${hours} : ${minute} ${ampm} ${clickedDate}`) {
-      console.log(clickedDate);
-      ringtone.play();
-      ringtone.loop = true;
-    }
-  });
-}, 1000);
+// setInterval(() => {
+//   const { hours, minute, second, ampm } = getCurrentTime();
+//   attachClickEventToItems(function (clickedDate) {
+//     if (boxValue == `${hours} : ${minute} ${ampm} ${clickedDate}`) {
+//       console.log(clickedDate);
+//       ringtone.play();
+//       ringtone.loop = true;
+//     }
+//   });
+// }, 1000);
 
 setAlarmBtn.addEventListener("click", () => {
   boxValue = timerBox.value;
