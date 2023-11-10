@@ -2,9 +2,13 @@ const welcomeName = document.querySelector(".welcome-name");
 const header = document.querySelector("#header");
 const searchBox = document.querySelector(".search-box");
 const plusAddReminder = document.querySelector(".add-reminder-plus");
+const closeModal = document.querySelector(".cancel-btn");
 
 // Events:
+closeModal.addEventListener("click", modalPupUp);
 plusAddReminder.addEventListener("click", modalPupUp);
+
+// functions:
 function showWelcomeMessage() {
   const userName = prompt("لطفاً نام خود را وارد کنید:");
   if (userName) {
