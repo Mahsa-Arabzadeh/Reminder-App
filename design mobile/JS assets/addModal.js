@@ -98,6 +98,7 @@ function addToAlarmsOutput(title, description) {
   titlePart.classList.add("title-part");
   textPart.classList.add("text-part");
   bxTrashIcon.classList.add("bx-trash");
+  bxTrashIcon.classList.add("bx");
   deletePart.classList.add("delete-part");
   titlePart.innerHTML = title;
   textPart.innerHTML = description;
