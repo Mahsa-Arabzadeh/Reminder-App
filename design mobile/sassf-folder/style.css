@@ -1,15 +1,7 @@
-:root {
-  --red: rgb(236, 61, 12);
-  --green: rgb(48, 194, 48);
-  --black: rgb(31, 30, 30);
-  --purple: rgb(149, 121, 232);
-}
-
 @font-face {
   font-family: popy;
   src: url(Poppins/Poppins-LightItalic.ttf);
 }
-
 * {
   padding: 0;
   margin: 0;
@@ -24,12 +16,7 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: var(--black);
-}
-
-.input-group input:focus {
-  outline: none;
-  border: 1px solid var(--purple);
+  background-color: rgb(31, 30, 30);
 }
 
 #create-account-form {
@@ -41,25 +28,39 @@ body {
   color: rgb(241, 237, 237);
   border-radius: 16px;
 }
-
-.title {
+#create-account-form .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(149, 121, 232);
+  background-color: rgb(31, 30, 30);
+  border: 1px solid rgb(149, 121, 232);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 0 rgb(149, 121, 232);
+  transition: ease-out 0.5s;
+}
+#create-account-form .btn:hover {
+  color: #fff;
+  box-shadow: inset 0 -100px 0 0 rgb(149, 121, 232);
+}
+#create-account-form .title {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   text-align: center;
   margin-bottom: 20px;
 }
-
-.input-group {
+#create-account-form .input-group {
   margin: 18px 0;
   position: relative;
 }
-
-.input-group label {
-  display: inline-block;
-  margin-bottom: 5px;
-  font-family: sans-serif;
+#create-account-form .input-group i {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  visibility: hidden;
 }
-
-.input-group input {
+#create-account-form .input-group input {
   display: block;
   width: 100%;
   padding: 12px;
@@ -68,60 +69,37 @@ body {
   border-radius: 12px;
   color: azure;
 }
-
-.error input {
-  border: 1px var(--red) solid;
+#create-account-form .input-group input:focus {
+  outline: none;
+  border: 1px solid rgb(149, 121, 232);
 }
-
-.success input {
-  border: 1px var(--green) solid;
+#create-account-form .input-group label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: sans-serif;
 }
-
-.input-group i {
-  position: absolute;
-  right: 10px;
-  top: 35px;
-  visibility: hidden;
+#create-account-form .error input {
+  border: 1px rgb(236, 61, 12) solid;
 }
-
-.success i.fa-check-circle {
+#create-account-form .error i.fa-exclamation-circle {
   visibility: visible;
-  color: var(--green);
+  color: rgb(236, 61, 12);
 }
-
-.error i.fa-exclamation-circle {
+#create-account-form .error p {
   visibility: visible;
-  color: var(--red);
 }
-
-.input-group p {
+#create-account-form .success input {
+  border: 1px rgb(48, 194, 48) solid;
+}
+#create-account-form .success i.fa-check-circle {
+  visibility: visible;
+  color: rgb(48, 194, 48);
+}
+#create-account-form p {
   font-size: 14px;
-  color: var(--red);
+  color: rgb(236, 61, 12);
   visibility: hidden;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.error p {
-  visibility: visible;
-}
-
-.btn {
-  width: 100%;
-  padding: 10px;
-  font-size: 20px;
-  color: var(--purple);
-  background-color: var(--black);
-  border: 1.6px solid var(--purple);
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 15px;
-  box-shadow: inset 0 0 0 0 var(--purple);
-  transition: ease-out 0.5s;
-}
-
-.btn:hover {
-  color: white;
-  box-shadow: inset 0 -100px 0 0 var(--purple);
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
