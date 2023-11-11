@@ -144,6 +144,8 @@ body{
     .free-reminder-item{
         @include Dimensions(100%,80px);
         @include display(flex,space-between,center);
+        flex-direction: column;
+        gap: 10px;
         margin-top: 20px;
     }
     .clock-part{

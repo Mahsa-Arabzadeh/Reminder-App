@@ -80,14 +80,25 @@ function formatTime(timeString) {
  * @returns {void}
  */
 function addToAlarmsOutput(title, description) {
-  const alarmsOutput = document.querySelector(".description-part");
+  const freeReminderItem = document.querySelector(".free-reminder-item");
+  const taskPart = document.createElement("div");
+  const alarmsOutput = document.createElement("div");
   const titlePart = document.createElement("div");
   const textPart = document.createElement("div");
-
+  const deletePart = document.createElement("div");
+  const bxTrashIcon = document.createElement("div");
+  freeReminderItem.append(taskPart);
+  taskPart.append(alarmsOutput);
   alarmsOutput.append(titlePart);
   alarmsOutput.append(textPart);
+  deletePart.append(bxTrashIcon);
+  taskPart.append(deletePart);
+  taskPart.classList.add("task-part");
+  alarmsOutput.classList.add("description-part");
   titlePart.classList.add("title-part");
   textPart.classList.add("text-part");
+  bxTrashIcon.classList.add("bx-trash");
+  deletePart.classList.add("delete-part");
   titlePart.innerHTML = title;
   textPart.innerHTML = description;
   //   alarmsOutput.innerHTML += `<p>${message}</p>`;

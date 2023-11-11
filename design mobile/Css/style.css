@@ -173,6 +173,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+  gap: 10px;
   margin-top: 20px;
 }
 .free-reminder .clock-part {
