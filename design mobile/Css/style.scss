@@ -232,10 +232,9 @@ body{
     @include display(flex,center,center);
     background-color: #1a1a1ac2;
     position: fixed;
-    top: 50%;
+    top: -100%;
     left: 50%;
     transform: translate(-50%,-50%);
-    height: 100vh;
     visibility: hidden;
     opacity: 0;
     z-index: 1000;
@@ -246,7 +245,7 @@ body{
         padding: 30px 16px;
         border-radius: 7px;
         position: fixed;
-        top: -100%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
     }
@@ -266,7 +265,7 @@ body{
     .date-alarm-plus ,  .time-alarm-plus{
         @include Dimensions(45%,100%);
     }
-    .date-input, #timer-box{
+    .date-input, #timepicker{
         @include display(flex,space-between,center);
         @include Dimensions(100%,40px);
         @include styles($white,$greyColor);
@@ -276,8 +275,14 @@ body{
             @include fontSize(26px);
             padding-right: 6px;
         }
+        #datepicker{
+            padding-left: 12px;
+            outline: none;
+            border: none;
+            background: none;
+        }
     }
-    #timer-box{
+    #timepicker{
         border: none;
         outline: none;
     }
