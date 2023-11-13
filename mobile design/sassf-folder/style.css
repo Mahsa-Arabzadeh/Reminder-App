@@ -1,0 +1,105 @@
+@font-face {
+  font-family: popy;
+  src: url(Poppins/Poppins-LightItalic.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  font-family: popy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: rgb(31, 30, 30);
+}
+
+#create-account-form {
+  width: 350px;
+  background: linear-gradient(rgb(31, 30, 30), rgb(31, 30, 30)) padding-box, linear-gradient(145deg, transparent, rgb(128, 75, 156), rgb(73, 139, 187)) border-box;
+  border: 2px solid transparent;
+  padding: 34px 20px;
+  font-size: 14px;
+  color: rgb(241, 237, 237);
+  border-radius: 16px;
+}
+#create-account-form .btn {
+  width: 100%;
+  padding: 10px;
+  font-size: 20px;
+  color: rgb(149, 121, 232);
+  background-color: rgb(31, 30, 30);
+  border: 1px solid rgb(149, 121, 232);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 15px;
+  box-shadow: inset 0 0 0 0 rgb(149, 121, 232);
+  transition: ease-out 0.5s;
+}
+#create-account-form .btn:hover {
+  color: #fff;
+  box-shadow: inset 0 -100px 0 0 rgb(149, 121, 232);
+}
+#create-account-form .title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+#create-account-form .input-group {
+  margin: 18px 0;
+  position: relative;
+}
+#create-account-form .input-group i {
+  position: absolute;
+  right: 10px;
+  top: 35px;
+  visibility: hidden;
+}
+#create-account-form .input-group input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: var(--black);
+  border: 1px solid rgb(211, 212, 212);
+  border-radius: 12px;
+  color: azure;
+}
+#create-account-form .input-group input:focus {
+  outline: none;
+  border: 1px solid rgb(149, 121, 232);
+}
+#create-account-form .input-group label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-family: sans-serif;
+}
+#create-account-form .error input {
+  border: 1px rgb(236, 61, 12) solid;
+}
+#create-account-form .error i.fa-exclamation-circle {
+  visibility: visible;
+  color: rgb(236, 61, 12);
+}
+#create-account-form .error p {
+  visibility: visible;
+}
+#create-account-form .success input {
+  border: 1px rgb(48, 194, 48) solid;
+}
+#create-account-form .success i.fa-check-circle {
+  visibility: visible;
+  color: rgb(48, 194, 48);
+}
+#create-account-form p {
+  font-size: 14px;
+  color: rgb(236, 61, 12);
+  visibility: hidden;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=style.css.map */
