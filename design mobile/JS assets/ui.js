@@ -1,4 +1,4 @@
-const welcomeName = document.querySelector(".welcome-name");
+// const welcomeName = document.querySelector(".welcome-name");
 const header = document.querySelector("#header");
 const searchBox = document.querySelector(".search-box");
 const plusAddReminder = document.querySelector(".add-reminder-plus");
@@ -9,15 +9,7 @@ closeModal.addEventListener("click", modalPupUp);
 plusAddReminder.addEventListener("click", modalPupUp);
 
 // functions:
-function showWelcomeMessage() {
-  const userName = prompt("لطفاً نام خود را وارد کنید:");
-  if (userName) {
-    welcomeName.textContent = `Hello, ${userName}!`;
-  } else {
-    welcomeName.textContent = "Hello, my friend!";
-  }
-}
-showWelcomeMessage();
+
 
 function getFormattedDate() {
   const months = [

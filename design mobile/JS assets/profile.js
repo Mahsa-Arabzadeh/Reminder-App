@@ -1,7 +1,7 @@
 // ................... Selected Events .....................
 
 const form = document.querySelector('#create-account-form');
-const usernameInput = document.querySelector('#username');
+const usernameInput = document.querySelector('#username')
 const emailInput = document.querySelector('#email');
 const passwordInput = document.querySelector('#password');
 const confirmPasswordInput = document.querySelector('#confirm-password');
@@ -21,7 +21,21 @@ form.addEventListener('submit', (event) => {
         event.preventDefault();
     }
 
+    showWelcomeMessage()
+
+    
 });
+
+
+function showWelcomeMessage() {
+    let personName = usernameInput.value
+    if (personName != null) {
+      document.getElementById("welcome-name-profile").innerHTML = `Hello, ${personName}!`;
+    }else{
+        document.getElementById("welcome-name-profile").innerHTML = `Hello, my !`;
+    }
+}
+
 
 function isFormValid() {
     const inputContainers = form.querySelectorAll('.input-group');
