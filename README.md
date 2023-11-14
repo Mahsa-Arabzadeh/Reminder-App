@@ -10,7 +10,7 @@ Setting a Timer:
 
 Open the application and navigate to the Timer section.
 Input the desired time duration.
-Optionally, select a specific category or label for the task.
+Optionally, `select a specific category ` or `label for the task.`
 Customizing Alerts:
 
 Access the Settings menu to personalize alarm sounds and notification preferences.
@@ -22,7 +22,7 @@ Users can easily edit, pause, or delete timers as needed.
 
 
 ### Team introduction:
-> developers team:
+> developers team: <br>
 Mahsa Arabzadeh <br>
 Marjan khormayipour <br>
 Mohadesse Keshtkar <br>
