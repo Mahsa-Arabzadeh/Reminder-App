@@ -23,9 +23,9 @@ Users can easily edit, pause, or delete timers as needed.
 
 ### Team introduction:
 > developers team:
-Mahsa Arabzadeh 
-Marjan khormayipour
-Mohadesse Keshtkar
+Mahsa Arabzadeh <br>
+Marjan khormayipour <br>
+Mohadesse Keshtkar <br>
 
 > Design team:
 Ayeh Mozaffary
