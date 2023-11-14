@@ -4,7 +4,7 @@ Introduction:
 Our Timer Reminder project is a sophisticated solution designed to enhance productivity and time management. This sleek application serves as a reliable reminder system, ensuring that users stay organized and on schedule. The intuitive interface and robust functionality make it an essential tool for anyone seeking efficient time management.
 
 ---
-Usage Guide:
+### Usage Guide:
 
 Setting a Timer:
 
@@ -19,3 +19,14 @@ Viewing and Managing Timers:
 
 The main dashboard provides an overview of all active and completed timers.
 Users can easily edit, pause, or delete timers as needed.
+
+
+### Team introduction:
+> developers team:
+Mahsa Arabzadeh 
+Marjan khormayipour
+Mohadesse Keshtkar
+
+> Design team:
+Ayeh Mozaffary
+
