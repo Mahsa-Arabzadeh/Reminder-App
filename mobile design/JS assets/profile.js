@@ -28,9 +28,9 @@ form.addEventListener("submit", (event) => {
 function showWelcomeMessage() {
     const usernameValue = localStorage.getItem("username");
 
-    document.querySelector(
-        ".welcome-name"
-    ).innerHTML = `Hello, ${usernameValue}!`;
+        document.querySelector(
+            ".welcome-name"
+        ).innerHTML = `Hello, ${usernameValue}!`;
 }
 
 function isFormValid() {

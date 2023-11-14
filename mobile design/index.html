@@ -1,113 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="Css/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="Css/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- start add alarm modal -->
     <div class="modal-pupup">
-        <div class="content">
-            <h3 class="title-alarm-topic">Alarm topic:</h3>
-            <input class="title-alarm-text" type="text" placeholder="Title of your alarm...">
-            <div class="date-and-time">
-                <div class="date-alarm-plus">
-                    <h3 class="date-alarm-topic">Set date:</h3>
-                    <div class="date-input">
-                        <div class="output-set-date">
-                            <input type="text" id="datepicker" placeholder="Select Date">
-                        </div>
-                        <i class='bx bx-calendar'></i>
-                    </div>
-                </div>
-                <div class="time-alarm-plus">
-                    <h3 class="time-alarm-topic">Set time:</h3>
-                    <!-- select time input set here -->
-                    <select id="timepicker"></select>
-                    <!-- timer-box -->
-                    <!-- select time input set here -->
-                </div>
+      <div class="content">
+        <h3 class="title-alarm-topic">Alarm topic:</h3>
+        <input
+          class="title-alarm-text"
+          type="text"
+          placeholder="Title of your alarm..."
+        />
+        <div class="date-and-time">
+          <div class="date-alarm-plus">
+            <h3 class="date-alarm-topic">Set date:</h3>
+            <div class="date-input">
+              <div class="output-set-date">
+                <input type="text" id="datepicker" placeholder="Select Date" />
+              </div>
+              <i class="bx bx-calendar"></i>
             </div>
-            <div class="description-alarm-plus">
-                <h3 class="description-alarm-topic">Description:</h3>
-                <textarea name="" class="description-text-area"
-                    placeholder="Type a description for your alarm..."></textarea>
-            </div>
-            <div class="cancel-add-btn">
-                <div class="cancel-btn">Cancel</div>
-                <div id="set-alarm-btn">Add alarm</div>
-            </div>
+          </div>
+          <div class="time-alarm-plus">
+            <h3 class="time-alarm-topic">Set time:</h3>
+            <!-- select time input set here -->
+            <select id="timepicker"></select>
+            <!-- timer-box -->
+            <!-- select time input set here -->
+          </div>
         </div>
+        <div class="description-alarm-plus">
+          <h3 class="description-alarm-topic">Description:</h3>
+          <textarea
+            name=""
+            class="description-text-area"
+            placeholder="Type a description for your alarm..."
+          ></textarea>
+        </div>
+        <div class="cancel-add-btn">
+          <div class="cancel-btn">Cancel</div>
+          <div id="set-alarm-btn">Add alarm</div>
+        </div>
+      </div>
     </div>
     <!-- end add alarm modal -->
     <header id="header">
-        <div class="profile-container">
-            <div class="profile-picture">
-                <i class='bx bx-user'></i>
-            </div>
+      <div class="profile-container">
+        <div class="profile-picture">
+          <i class="bx bx-user"></i>
         </div>
-        <h3 class="welcome-name">Hello, my friend!</h3>
-        <div class="search-box">
-            <input class="input-search-box" type="text" placeholder="Search" autofocus>
-            <i class='bx bx-search' style='color:#c6aa9a'></i>
-        </div>
+      </div>
+      <h3 class="welcome-name">Hello, my friend!</h3>
+      <div class="search-box">
+        <input
+          class="input-search-box"
+          type="text"
+          placeholder="Search"
+          autofocus
+        />
+        <i class="bx bx-search" style="color: #c6aa9a"></i>
+      </div>
     </header>
     <section class="schedules">
-        <div class="schedule-item-add">
-            <h2 class="title-schedule">Add category</h2>
-            <div class="icon-schedule">
-                <i class='bx bx-category'></i>
-            </div>
-            <p class="Category-description">Create a category for your plans. Execute your plans on time.</p>
-            <div class="checkin-btn">Add schedule</div>
+      <div class="schedule-item-add">
+        <h2 class="title-schedule">Add category</h2>
+        <div class="icon-schedule">
+          <i class="bx bx-category"></i>
         </div>
+        <p class="Category-description">
+          Create a category for your plans. Execute your plans on time.
+        </p>
+        <div class="checkin-btn">Add schedule</div>
+      </div>
     </section>
     <section class="free-reminder">
-        <div class="header-free-reminder">
-            <span>Your dairy</span>
-            <a href="#" class="see-all">See all</a>
+      <div class="header-free-reminder">
+        <span>Your dairy</span>
+        <a href="#" class="see-all">See all</a>
+      </div>
+      <div class="main-free-reminder">
+        <div class="free-reminder-item">
+          <div class="clock-part"></div>
         </div>
-
-        <!-- u can add these in javascript -->
-        <div class="main-free-reminder">
-            <div class="free-reminder-item">
-                <div class="clock-part"></div>
-                <!-- <div class="task-part">
-                    <div class="description-part">
-                        <h3 class="title-part"></h3>
-                        <p class="text-part"></p>
-                    </div>
-                    <div class="delete-part">
-                        <i class='bx bx-trash'></i>
-                    </div>
-                </div> -->
-            </div>
-        </div>
-        <!-- u can add these in javascript -->
+      </div>
     </section>
     <footer id="footer">
-        <div class="home">
-            <i class='bx bx-home-alt'></i>
-        </div>
-        <div class="add-reminder-plus">
-            <i class='bx bx-bell-plus'></i>
-        </div>
-        <a href="profile.html" class="user-profile">
-            <i class='bx bx-user'></i>
-        </a>
+      <div class="home">
+        <i class="bx bx-home-alt"></i>
+      </div>
+      <div class="add-reminder-plus">
+        <i class="bx bx-bell-plus"></i>
+      </div>
+      <a href="profile.html" class="user-profile">
+        <i class="bx bx-user"></i>
+      </a>
     </footer>
     <script src="JS assets/ui.js"></script>
-    <script src="JS assets/selectTime.js"></script>
     <script src="JS assets/addModal.js"></script>
-</body>
-
+  </body>
 </html>

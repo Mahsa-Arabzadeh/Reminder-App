@@ -17,6 +17,11 @@ function showWelcomeMessage() {
     document.querySelector(
         ".welcome-name"
     ).innerHTML = `Hello, ${usernameValue}!`;
+    if(usernameValue === null){
+        document.querySelector(
+            ".welcome-name"
+        ).innerHTML = `Hello, my friend!`;
+    }
 }
 
 function getFormattedDate() {
