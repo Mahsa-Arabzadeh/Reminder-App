@@ -17,8 +17,9 @@
 body {
     font-family: popy;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-direction: column;
     min-height: 100vh;
     background-color: $black;
 }
@@ -116,5 +117,43 @@ body {
         color: $red;
         visibility: hidden;
         font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    }
+}
+
+#footer{
+    @include queryIf(576){
+        @include Dimensions(100%,100%);
+    }
+    @include queryIf(577){
+        .home , .user-profile{
+            display: none;
+            opacity: 0;
+        }
+    }
+    @include display(flex,center,flex-start);
+    @include styles($white,$primaryColorblur);
+    padding: 10px 16px;
+    transition: .3s;
+    .home{
+        @include display(flex,center,center);
+        @include Dimensions(100%,34px);
+        @include fontSize(23px);
+        cursor: pointer;
+        color: $lightGrey;
+        transition: .3s;
+        &:hover{
+            color: $lightPurple;
+        }
+    }
+    .user-profile{
+        @include display(flex,center,center);
+        @include Dimensions(100%,34px);
+        @include fontSize(23px);
+        color: $lightGrey;
+        cursor: pointer;
+        transition: .3s;
+        &:hover{
+            color: $lightPurple;
+        }
     }
 }

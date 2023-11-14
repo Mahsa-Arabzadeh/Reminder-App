@@ -27,5 +27,9 @@
         @media (max-width:800px) {
             @content;
         }
+    } @else if($width == 577){
+        @media (min-width:576px) {
+            @content;
+        }
     }
 }

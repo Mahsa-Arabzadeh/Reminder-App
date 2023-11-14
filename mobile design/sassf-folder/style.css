@@ -13,8 +13,9 @@
 body {
   font-family: popy;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   background-color: rgb(31, 30, 30);
 }
@@ -100,6 +101,56 @@ body {
   color: rgb(236, 61, 12);
   visibility: hidden;
   font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  color: white;
+  background-color: rgba(26, 26, 26, 0.3803921569);
+  padding: 10px 16px;
+  transition: 0.3s;
+}
+@media (max-width: 576px) {
+  #footer {
+    width: 60%;
+    height: 100%;
+  }
+}
+@media (min-width: 576px) {
+  #footer .home, #footer .user-profile {
+    display: none;
+    opacity: 0;
+  }
+}
+#footer .home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 34px;
+  font-size: 23px;
+  cursor: pointer;
+  color: #959595;
+  transition: 0.3s;
+}
+#footer .home:hover {
+  color: #9a42d0;
+}
+#footer .user-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 34px;
+  font-size: 23px;
+  color: #959595;
+  cursor: pointer;
+  transition: 0.3s;
+}
+#footer .user-profile:hover {
+  color: #9a42d0;
 }
 
 /*# sourceMappingURL=style.css.map */

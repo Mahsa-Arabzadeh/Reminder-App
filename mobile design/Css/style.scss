@@ -188,10 +188,18 @@ body{
 }
 
 #footer{
+    @include queryIf(576){
+        @include Dimensions(100%,100%);
+    }
+    @include queryIf(577){
+        .home , .user-profile , .add-reminder-plus{
+            display: none;
+            opacity: 0;
+        }       
+    }
     @include display(flex,center,flex-start);
     @include styles($white,$primaryColorblur);
     padding: 10px 16px;
-    height: 100vh;
     transition: .3s;
     .home{
         @include display(flex,center,center);
@@ -234,13 +242,13 @@ body{
     @include display(flex,center,center);
     background-color: #1a1a1ac2;
     position: fixed;
-    top: -100%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     visibility: hidden;
     opacity: 0;
     z-index: 1000;
-    transition: .4s;
+    transition: .2s;
     .content{
         @include Dimensions(500px,473px);
         @include styles($white,$grey);

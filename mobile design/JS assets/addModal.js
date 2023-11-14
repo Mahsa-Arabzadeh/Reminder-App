@@ -60,6 +60,9 @@ function showAlarmMessage(title, description) {
     text: description || "It's time!",
     // Additional actions related to showing the alarm message can be added here.
   });
+  const ringtone = new Audio("sounds/bedside-clock-alarm-95792.mp3");
+  ringtone.play();
+  ringtone.loop = true;
 }
 
 /**
