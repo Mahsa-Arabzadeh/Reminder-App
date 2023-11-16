@@ -18,8 +18,11 @@ Users can also choose to receive reminders via email or SMS for added convenienc
 Viewing and Managing Timers:
 
 The main dashboard provides an overview of all active and completed timers.
-Users can easily edit, pause, or delete timers as needed.
-
+Users can easily edit, pause, or delete timers as needed. <br>
+<br>
+### Preview:
+<img src="images/Capture.PNG"></img> <br>
+<br>
 ### JavaScript libraries used in the project:
 >  https://flatpickr.js.org/getting-started/ <br>
 >  https://sweetalert2.github.io/ 
@@ -38,5 +41,5 @@ https://trello.com/b/jjYonxLh/challenge-first-mvp
 
 ### Mobile design link in Figma:
 https://www.figma.com/file/jK5zNTomBlfr6SoZjb1xCo/Untitled?type=design&node-id=6-2&mode=design <br>
-**Note that this design was later changed.** <== <br>
-<img src="images/Capture.PNG"></img>
+**Note that this design was later`changed`.** <== <br>
+
