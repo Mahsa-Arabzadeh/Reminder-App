@@ -21,8 +21,8 @@ The main dashboard provides an overview of all active and completed timers.
 Users can easily edit, pause, or delete timers as needed.
 
 ### JavaScript libraries used in the project:
-> ` https://flatpickr.js.org/getting-started/`
-> ` https://sweetalert2.github.io/ `
+>  https://flatpickr.js.org/getting-started/ <br>
+>  https://sweetalert2.github.io/ 
 
 ### Team introduction:
 > Developers team: <br>
@@ -34,8 +34,9 @@ Mohadesse Keshtkar <br>
 Ayeh Mozaffary
 
 ### Trello link:
-`https://trello.com/b/jjYonxLh/challenge-first-mvp`
+https://trello.com/b/jjYonxLh/challenge-first-mvp
 
 ### Mobile design link in Figma:
-`https://www.figma.com/file/jK5zNTomBlfr6SoZjb1xCo/Untitled?type=design&node-id=6-2&mode=design` <br>
-**Note that this design was later changed.** <br>
+https://www.figma.com/file/jK5zNTomBlfr6SoZjb1xCo/Untitled?type=design&node-id=6-2&mode=design <br>
+**Note that this design was later changed.** <== <br>
+<img src="images/Capture.PNG"></img>
