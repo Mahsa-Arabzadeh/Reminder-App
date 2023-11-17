@@ -21,7 +21,7 @@ The main dashboard provides an overview of all active and completed timers.
 Users can easily edit, pause, or delete timers as needed. <br>
 <br>
 ### Preview:
-<img src="images/Capture.PNG"></img> <br>
+<img src="images/Capture2.PNG"></img> <br>
 <br>
 ### JavaScript libraries used in the project:
 >  https://flatpickr.js.org/getting-started/ <br>
